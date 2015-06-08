@@ -1,28 +1,28 @@
 == README
 
 1. Generate the model with:
-```
-rails g model Creature name description
 
-rake db:migrate
-```
+<tt>rails g model Creature name description</tt>
+<tt>rake db:migrate</tt>
 
-2. put seed data in db/seeds.rb then run
+2. put seed data in db/seeds.rb then run <tt>rake db:seed</tt>
 
-```
-rake db:seed
-```
+3. then generate the controller actions with <tt>rails g scaffold_controller Creature</tt>
 
-3. then generate the controller actions with
-```
-rails g scaffold_controller Creature
-```
-
-4. add
-```
-root 'creatures#index'
-```
-to config/routes.rb
+4. add <tt>root 'creatures#index'</tt> to config/routes.rb
 
 5. change each view in app/views/creature/ to add form elements or to show the creature.name and creature.description
+== README
 
+1. Generate the model with:
+
+  <tt>rails g model Creature name description</tt>
+  <tt>rake db:migrate</tt>
+
+2. put seed data in db/seeds.rb then run <tt>rake db:seed</tt>
+
+3. then generate the controller actions with <tt>rails g scaffold_controller Creature</tt>
+
+4. add <tt>root 'creatures#index'</tt> to config/routes.rb
+
+5. change each view in app/views/creature/ to add form elements or to show the creature.name and creature.description
